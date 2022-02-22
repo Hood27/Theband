@@ -1,0 +1,99 @@
+/*Mobile*/
+@media (max-width: 740px) {
+    
+    .s-mt-8{
+        margin-top: 8px !important;
+    }
+    .s-full-width,
+    .s-col-full{
+        width: 100%;
+    }
+    #header{
+        overflow: hidden;
+    }
+    #header .search-button{
+        display: none;
+    }
+    #header .mobile-menu-button{
+        display: block;
+    }
+    #nav>li{
+        display: block;
+    }
+    #nav li a{
+        padding: 1px 24px;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: black;
+        padding-left: 25px;
+    }
+    #nav  li:hover .subnav{
+        display: block;
+    }
+    #nav .subnav a{
+        color: white;
+        background-color: black;
+    }
+    #nav{
+        display: block;
+    }
+    #nav>li:first-child{
+        display: inline-block;
+    }
+    #content .member-img{
+        width: 60%;
+    }
+    .contact-form{
+        margin-top: 32px;
+    }
+    .form-control{
+        margin-left: 8px;
+    }
+    .submit-btn{
+        float: right;
+    }
+    .submit-btn{
+        margin-right: -2px;
+    }
+}
+/*pc*/
+@media (min-width: 1024px){
+    #header .mobile-menu-button{
+        display: none;
+    }
+}
+/*mobile and tablet*/
+@media (max-width: 1023px){
+    .s-full-width{
+        width: 100%;
+    }
+    #nav .subnav a{
+        padding: 5px 12px;
+    }
+    .place-ticket-button{
+        padding: 15px 16px;
+    }
+    .contact-form .form-control{
+        padding: 15px;
+    }
+    .social-list{
+        font-size: 48px;
+    }
+    #footer .social-list a{
+        margin: 0 8px;
+    }
+    #footer .coppyright a{
+        padding: 12px 0;
+        display: inline-block;
+    }
+    .contact-info{
+        line-height: 2;
+    }
+}
+/*tablet*/
+@media (min-width: 740px) and (max-width: 1023px){
+    #header .mobile-menu-button{
+        display: none;
+    }
+}

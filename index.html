@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The band</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <script src="https://kit.fontawesome.com/840423e717.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -19,23 +19,27 @@
                 <li><a href="#Tour">Tour</a></li>
                 <li><a href="#Contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="nav-arrow fa-solid fa-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
             <!--End nav-->
-            <!--Begin button-->
+            <!--Mobile menu button-->
+            <div id="mobile-menu" class="mobile-menu-button">
+                <i class=" menu-icon fa-solid fa-bars"></i>
+            </div>
+            <!--Search button-->
             <div class="nav-button">
                 <i class="search-button fa-solid fa-magnifying-glass"></i>
             </div>
-            <!--End button-->
+           
 
         </div>
         <div id="slider">
@@ -51,15 +55,15 @@
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <div class="member-list">
-                    <div class="member-item col col-third">
+                    <div class="member-item col col-third s-col-full mt-32">
                         <p class="member-name ">John</p>
                         <img src="./assets/img/Band/bandmember1.jpg" alt="John" class="member-img">
                     </div>
-                    <div class="member-item col col-third">
+                    <div class=" member-item col col-third s-col-full mt-32">
                         <p class="member-name">Henry</p>
                         <img src="./assets/img/Band/bandmember1.jpg" alt="John" class="member-img">
                     </div>
-                    <div class="member-item col col-third">
+                    <div class=" member-item col col-third s-col-full mt-32">
                         <p class="member-name">Black</p>
                         <img src="./assets/img/Band/bandmember1.jpg" alt="John" class="member-img">
                     </div>
@@ -78,31 +82,31 @@
                             <li>November <span class="quantity">3</span></li>
                         </ul>
                         <div class="place-list row">
-                            <div class="col-third col">
+                            <div class="col-third col s-col-full mt-16">
                                 <img src="./assets/img/places/newyork.jpg" alt="New York" class="place-img">
                                 <div class="place-body">
                                     <h3 class="place-heading">New York</h3>
                                     <p class="place-time">Fri 27 Nov 2016</p>
                                     <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button class="place-ticket-button js-buy-ticket">Buy Tickets</button>
+                                    <button class="place-ticket-button js-buy-ticket s-full-width">Buy Tickets</button>
                                 </div>
                             </div>
-                            <div class="col-third col">
+                            <div class="col-third col s-col-full mt-16">
                                 <img src="./assets/img/places/paris.jpg" alt="Paris" class="place-img">
                                 <div class="place-body">
                                     <h3 class="place-heading">Paris</h3>
                                     <p class="place-time">Sat 28 Nov 2016</p>
                                     <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button class="place-ticket-button js-buy-ticket ">Buy Tickets</button>
+                                    <button class="place-ticket-button js-buy-ticket s-full-width ">Buy Tickets</button>
                                 </div>
                             </div>
-                            <div class="col-third col">
+                            <div class="col-third col s-col-full mt-16">
                                 <img src="./assets/img/places/sanfran.jpg" alt="San Francisco" class="place-img">
                                 <div class="place-body">
                                     <h3 class="place-heading">San Francisco</h3>
                                     <p class="place-time">Sun 29 Nov 2016</p>
                                     <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button class="place-ticket-button js-buy-ticket ">Buy Tickets</button>
+                                    <button class="place-ticket-button js-buy-ticket s-full-width  ">Buy Tickets</button>
                                 </div>
                             </div>
                             <div class="clear"></div>
@@ -114,28 +118,28 @@
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
                 <div class="row contact-content">
-                    <div class="col col-half contact-info ">
+                    <div class="col col-half s-col-full contact-info ">
                         <p class="content-section-size">
                             <i class=" fa-solid fa-location-pin "></i>
                             Chicago, US
                         </p>
                         <p class="content-section-size ">
                             <i class=" fa-solid fa-phone "></i>
-                            Phone: +00 151515
+                            Phone: <a href="tell:+00 151515">+00 151515</a>
                         </p>
                         <p class="content-section-size">
                             <i class=" fa-solid fa-envelope"></i>
-                            Email: mail@mail.com
+                            Email: <a href="mailto: anhkhoalhtst270202@gamil.com">mail@mail.com</a>
                         </p>
 
                     </div>
-                    <div class="col col-half contact-form">
+                    <div class="col col-half s-col-full contact-form s-center">
                         <form action="">
                             <div class="row space">
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full">
                                     <input type="text" placeholder="Name" class="form-control">
                                 </div>
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full s-mt-8">
                                     <input type="email" placeholder="Email" class="form-control">
                                 </div>
                             </div>
@@ -144,7 +148,7 @@
                                     <input type="text" placeholder="Message" class="form-control">
                                 </div>
                             </div>
-                            <input class="submit-btn" type="submit" value="SEND">
+                            <input class="submit-btn s-full-width" type="submit" value="SEND">
                         </form>
                     </div>
                     <div class="clear"></div>
@@ -217,7 +221,32 @@
         modalcontainer.addEventListener('click', function (event){
             event.stopPropagation()
         })
-        
+        var header = document.getElementById('header');
+        var mobileMenu =document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+        mobileMenu.onclick = function(){
+            var isClosed = header.clientHeight === headerHeight;
+            if(isClosed){
+                header.style.height = 'auto';
+            }
+            else {
+                header.style.height= null;
+            }
+
+        }
+        var menuItems =document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i= 0 ; i< menuItems.length; i++){
+            var menuItem = menuItems[i];
+            menuItem.onclick = function (event){
+                var isParrentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if(isParrentMenu){
+                    event.preventDefault();
+                }
+                else{
+                    header.style.height= null;
+                }
+            }
+        }
     </script>
 
 
